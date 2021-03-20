@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 patching(){
-    apt-get update && apt-get upgrade -y;
+    apt-get update -y;
 	apt-get install --allow-unauthenticated software-properties-common -y
 	apt-get install wget make gcc -y
 };
